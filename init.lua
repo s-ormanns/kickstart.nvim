@@ -190,7 +190,7 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
-vim.keymap.set('n', '<C-t>', '<cmd>:Neotree  float<cr>', { desc = 'Open neotree in a floating window' })
+vim.keymap.set('n', '<C-t>', '<cmd>:Neotree float<cr>', { desc = 'Open neotree in a floating window' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -829,6 +829,9 @@ require('lazy').setup({
       --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
     end,
   },
+
+  -- custom plugins
+
   { 'ThePrimeagen/vim-be-good' },
   {
     'nvim-neo-tree/neo-tree.nvim',
